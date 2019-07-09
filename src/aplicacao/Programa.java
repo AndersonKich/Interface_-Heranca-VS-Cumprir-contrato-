@@ -2,6 +2,7 @@ package aplicacao;
 
 import java.util.Locale;
 
+import model.entidades.AbstractFigura;
 import model.entidades.Circulo;
 import model.entidades.Retangulo;
 import model.enums.Cores;
@@ -12,8 +13,8 @@ public class Programa {
 		
 		Locale.setDefault(Locale.US);
 		
-		Retangulo r = new Retangulo(Cores.BLACK, 3.0, 4.0);
-		Circulo c = new Circulo(Cores.WHITH, 2.0);
+		AbstractFigura r = new Retangulo(Cores.BLACK, 3.0, 4.0);
+		AbstractFigura c = new Circulo(Cores.WHITH, 2.0);
 		
 		System.out.println("Retangulo cor: "+r.getCor());
 		System.out.println("Retangulo area: "+String.format("%.3f",r.area()));

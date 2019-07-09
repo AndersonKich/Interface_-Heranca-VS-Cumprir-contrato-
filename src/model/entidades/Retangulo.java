@@ -2,7 +2,7 @@ package model.entidades;
 
 import model.enums.Cores;
 
-public class Retangulo extends Figura {
+public class Retangulo extends AbstractFigura {
 
 	private double altura;
 	private double largura;
@@ -14,42 +14,24 @@ public class Retangulo extends Figura {
 		this.largura = largura;
 	}
 	
-	
-	
-	
-	
+
 	public double getAltura() {
 		return altura;
 	}
-
-
-
-
 
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
 
-
-
-
-
 	public double getLargura() {
 		return largura;
 	}
-
-
-
-
 
 	public void setLargura(double largura) {
 		this.largura = largura;
 	}
 
-
-
-
-
+	@Override
 	public double area() {
 		
 		return altura * largura;

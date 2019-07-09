@@ -2,7 +2,7 @@ package model.entidades;
 
 import model.enums.Cores;
 
-public class Circulo extends Figura {
+public class Circulo extends AbstractFigura {
 
 	private double raio;
 
@@ -11,6 +11,7 @@ public class Circulo extends Figura {
 		this.raio = raio;
 	}
 	
+	@Override
 	public double area() {
 		
 		return 2*3.14*raio;
